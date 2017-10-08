@@ -86,7 +86,7 @@ void populateArray(int intArray[][INT_DAYS])
     
     ifstream infile;
     
-    infile.open("C:\\Users\\aeiou\\Desktop\\CodeBlocks\\Ch07-Arrays-and-Vectors\\PRG-7-6-Rain-or-Shine\\RainOrShine.txt");
+    infile.open("/Users/bluebackdev/Desktop/CodeBlocks/For Github/08-Searching and Sorting Arrays/PRG-8-5-Rainfall-Statistics-Modification/PRG-8-5-Rainfall-Statistics-Modification/RainOrShine.txt");
     if(!infile)
     {
         cout << "File open Failure!";
@@ -239,7 +239,7 @@ void sortResults(int June, int July, int August)
     
     for(maxElement = INT_MONTHS - 1 ; maxElement > 0 ; maxElement--)
     {
-        for(index = 0 ; index < maxElement ; index++)
+        for(index = 0 ; index < maxElement; index++)
         {
             if(intMonths[index] > intMonths[index - 1])
             {

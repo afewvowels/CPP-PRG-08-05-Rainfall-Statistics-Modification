@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		256909801F8AAAE300DE5576 /* PRG-8-5-Rainfall-Statistics-Modification */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "PRG-8-5-Rainfall-Statistics-Modification"; sourceTree = BUILT_PRODUCTS_DIR; };
 		256909831F8AAAE300DE5576 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2569098A1F8AABAA00DE5576 /* RainOrShine.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = RainOrShine.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				256909831F8AAAE300DE5576 /* main.cpp */,
+				2569098A1F8AABAA00DE5576 /* RainOrShine.txt */,
 			);
 			path = "PRG-8-5-Rainfall-Statistics-Modification";
 			sourceTree = "<group>";
