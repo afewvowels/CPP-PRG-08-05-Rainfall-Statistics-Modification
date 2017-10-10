@@ -75,7 +75,7 @@ int main()
     
     sortResults(intJuneRainy, intJulyRainy, intAugustRainy);
     
-    displayResults(intDaysSunny, intDaysCloudy, intDaysRainy, intJuneSunny, intJuneCloudy, intJuneRainy, intJulySunny, intJulyCloudy, intJulyRainy, intAugustSunny, intAugustCloudy, intAugustRainy);
+//    displayResults(intDaysSunny, intDaysCloudy, intDaysRainy, intJuneSunny, intJuneCloudy, intJuneRainy, intJulySunny, intJulyCloudy, intJulyRainy, intAugustSunny, intAugustCloudy, intAugustRainy);
     
     return 0;
 }
@@ -241,16 +241,17 @@ void sortResults(int June, int July, int August)
     {
         for(index = 0 ; index < maxElement; index++)
         {
-            if(intMonths[index] > intMonths[index - 1])
+            // Just switch the < to > for reverse sort order
+            if(intMonths[index] < intMonths[index + 1])
             {
                 temp = intMonths[index];
                 temp2 = strMonthNames[index];
                 
-                intMonths[index] = intMonths[index - 1];
-                strMonthNames[index] = strMonthNames[index - 1];
+                intMonths[index] = intMonths[index + 1];
+                strMonthNames[index] = strMonthNames[index + 1];
                 
-                intMonths[index - 1] = temp;
-                strMonthNames[index - 1] = temp2;
+                intMonths[index + 1] = temp;
+                strMonthNames[index + 1] = temp2;
             }
         }
     }
